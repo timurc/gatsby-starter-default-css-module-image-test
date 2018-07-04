@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
+import style from './style.module.css'
 
 const Layout = ({ children, data }) => (
   <StaticQuery
@@ -34,6 +35,7 @@ const Layout = ({ children, data }) => (
             padding: '0px 1.0875rem 1.45rem',
             paddingTop: 0,
           }}
+          className={style.main}
         >
           {children}
         </div>

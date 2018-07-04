@@ -1,0 +1,5 @@
+.main {
+    background-image: url('./boa.png');
+    background-repeat: repeat-y;
+    background-position: 2rem top;
+}
